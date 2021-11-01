@@ -1,0 +1,10 @@
+
+az group create --resource-group rg-RedisCacheJsa --location eastus2
+
+az redis create --name santijsRedisCache \
+--location eastus2 \
+--resource-group rg-RedisCacheJsa \
+--sku Basic \
+--vm-size c0
+
+az redis list --resource-group rg-RedisCacheJsa
