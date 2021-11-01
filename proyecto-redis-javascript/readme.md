@@ -1,8 +1,11 @@
 # Inicializar el programa
+
+```
  mkdir redisapp
  cd redisapp
  npm init -y
  touch app.js
+```
 
 # Libreria para trabajar con JS
 
