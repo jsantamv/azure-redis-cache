@@ -1,4 +1,8 @@
 
+# sudo apt-get update
+# sudo apt-get upgrade
+# sudo apt-get install redis-tools
+
 redis-cli -h JsaPersonalRedisCache.redis.cache.windows.net -p 6380 -a nDE0CoG1sYPiBIq8hFJsaUkp9mZZaiPXSvF2Y4CEaAo=
 
 redis-cli -h JsaPersonalRedisCache.redis.cache.windows.net -p 6379 -a nDE0CoG1sYPiBIq8hFJsaUkp9mZZaiPXSvF2Y4CEaAo=

@@ -1,3 +1,6 @@
+# 1. Creacion de un grupo de recursos RG
+# 2. Creamos un redis-cache como servicio en azure
+# 3. Listamos los recursos que tenemos creados en RG 
 
 az group create --resource-group rg-RedisCacheJsa --location eastus2
 
