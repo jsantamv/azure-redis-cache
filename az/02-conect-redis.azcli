@@ -2,6 +2,9 @@
 # sudo apt-get update
 # sudo apt-get upgrade
 # sudo apt-get install redis-tools
+# Utilizado Linux WSL para ingresar a una carpeta propia de windos 
+# se Utiliza la siguinete ruta /mnt/c/users/jsant/repos-git/azure-redis-cache
+# Donde "c" seria el directorio C de windows desde Linux en WSL.
 
 redis-cli -h JsaPersonalRedisCache.redis.cache.windows.net -p 6380 -a nDE0CoG1sYPiBIq8hFJsaUkp9mZZaiPXSvF2Y4CEaAo=
 
