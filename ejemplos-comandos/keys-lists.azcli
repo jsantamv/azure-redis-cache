@@ -1,0 +1,36 @@
+# Este ejemplo ya sea utilizarlo en la consola de Azure
+# esto para saber cómo se usan las llaves y las listas
+# o Conectarse por medio de WSL en consola Linux, recordar para pruebas habilitar el puerto 6379
+# Por ejemplo redis-cli -h JsaPersonalRedisCache.redis.cache.windows.net -p 6379 -a xxxxxxxxKEYxxxxxxx
+
+# 1. Inicializar en WSL
+redis-cli -h JsaPersonalRedisCache.redis.cache.windows.net -p 6379 -a t5BNn7rfso0+yQF6k6ro4GaFed89R0aAGtnYHkHjeVE=
+
+# 2. Script para la consola de ejemplos para LLAVES
+set mi_primerallave 20020
+set llave2 "probando los datos"
+get mi_primerallave
+get llave2
+
+# 3. Ejemplos para listas
+## 3.1 agregar listas por la izquierda y a la derecha
+lpush mi_lista Freddy
+lpush mi_lista Gerardo
+lpush mi_lista "Juan Carlos"
+lpush mi_lista Rosa Alba Holanda Somalia
+
+rpush mi_lista "Don Omar"
+
+## 3.2 para obtener la lista  si colocamos 0 -1 me trae todos los objetos de la izquierda a la derecha.
+lrange mi_lista 0 -1
+
+## 3.3 para sacar datos de la lista ya sea por la derecha o por la izquierda
+lpop  mi_lista
+lrange mi_lista 0 -1
+
+rpop mi_lista
+lrange mi_lista 0 -1
+
+## 3.4 Objeto Json
+rpush mi_lista "{'nombre':'Juan Carlos', 'cuidad','San Jose'}"
+
