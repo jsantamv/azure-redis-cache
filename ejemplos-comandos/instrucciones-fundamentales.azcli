@@ -1,0 +1,23 @@
+## del:     Eliminar
+## exists:  validar si existe
+## expire:  para que la llave expire en un lapso determinado
+## ttl:     Time to Leap 
+
+set nueva_key_temp "Temporal"
+del nueva_key_temp
+get nueva_key_temp
+
+### Validar si existe
+exists nueva_key_temp
+
+exists mi_primerallave
+get mi_primerallave
+
+### pero queremos que expire
+expire mi_primerallave 10
+ttl mi_primerallave
+
+## Comandos de asignacion multiple
+getset data-multiple otroValor
+
+
