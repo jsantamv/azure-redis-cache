@@ -14,6 +14,10 @@ const client = redis.createClient(
     }
 );
 
+/**
+ * Metodo asincrono para realizar una prueba
+ * del llamado del redis por medio de JS
+ */
 const CallRedisTest = async () => {
 
     console.log("Adding value to the cache");
@@ -33,3 +37,4 @@ const CallRedisTest = async () => {
 }
 
 CallRedisTest();
+
