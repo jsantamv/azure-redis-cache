@@ -1,0 +1,23 @@
+## Hashes
+### Son identificadores, que apuntan a uno a un conjunto de valores. 
+
+### h: hash, m:multiple, set: establecer
+hmset student:48 name "Dr Who" age 25 avarage 4.9
+hmset student:2035 name "Steve Rogers" age 125 avarage 5 nacionalidad USA
+
+### Para Obtenerlo por partes
+hget student:48 name
+hget student:48 avarage
+
+### Para obtenerlo todo, tomar en cuenta que los datos van por pares (llave, valor) pero en forma de lista
+
+hgetall student:48
+hgetall student:2035
+
+### Para saber las llaves de un hash determinado
+
+hkeys student:2035
+
+### Para saber los valores de un hash determinado
+
+hvals student:2035
