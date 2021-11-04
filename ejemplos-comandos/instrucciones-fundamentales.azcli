@@ -20,4 +20,21 @@ ttl mi_primerallave
 ## Comandos de asignacion multiple
 getset data-multiple otroValor
 
+redis> MSET key1 "Hello" key2 "World"
+"OK"
+redis> GET key1
+"Hello"
+redis> GET key2
+"World"
+redis> 
 
+
+redis> SET key1 "Hello"
+"OK"
+redis> SET key2 "World"
+"OK"
+redis> MGET key1 key2 nonexisting
+1) "Hello"
+2) "World"
+3) (nil)
+redis> 
